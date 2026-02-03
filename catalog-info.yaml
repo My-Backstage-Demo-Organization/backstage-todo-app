@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: react-fastapi-app
+  description: React + FastAPI + SQLite demo service
+spec:
+  type: service
+  owner: user:github/sairamreddy77
+  lifecycle: experimental
+  providesApis:
+    - react-fastapi-api
