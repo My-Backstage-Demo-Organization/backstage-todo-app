@@ -22,7 +22,7 @@ spec:
   owner: user:github/sairamreddy77
   definition:
     $text: >
-          http://127.0.0.1:8000/openapi.json
+      http://127.0.0.1:8000/openapi.json
 
     # $openapi: http://localhost:8000/openapi.json
     # $text: |
