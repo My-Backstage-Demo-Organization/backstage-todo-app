@@ -21,16 +21,17 @@ spec:
   lifecycle: experimental
   owner: user:github/sairamreddy77
   definition:
-    $text: |
-      openapi: 3.0.0
-      info:
-        title: Simple API
-        version: 1.0.0
-      paths:
-        /health:
-          get:
-            summary: Health check
-            responses:
-              '200':
-                description: OK
+    $openapi: http://localhost:8000/openapi.json
+    # $text: |
+    #   openapi: 3.0.0
+    #   info:
+    #     title: Simple API
+    #     version: 1.0.0
+    #   paths:
+    #     /health:
+    #       get:
+    #         summary: Health check
+    #         responses:
+    #           '200':
+    #             description: OK
 
