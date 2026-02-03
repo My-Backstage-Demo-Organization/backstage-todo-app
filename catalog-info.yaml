@@ -5,7 +5,7 @@ metadata:
   description: React + FastAPI + SQLite demo service
 spec:
   type: service
-  owner: user:github/sairamreddy77
+  owner: user:default/sairambreddy
   lifecycle: experimental
   providesApis:
     - react-fastapi-api
