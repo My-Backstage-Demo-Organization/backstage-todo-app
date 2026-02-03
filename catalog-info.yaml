@@ -19,7 +19,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: user:github/<your-github-username>
+  owner: user:github/sairamreddy77
   definition:
     $text: |
       openapi: 3.0.0
