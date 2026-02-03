@@ -9,3 +9,28 @@ spec:
   lifecycle: experimental
   providesApis:
     - react-fastapi-api
+
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: react-fastapi-api
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: user:github/<your-github-username>
+  definition:
+    $text: |
+      openapi: 3.0.0
+      info:
+        title: Simple API
+        version: 1.0.0
+      paths:
+        /health:
+          get:
+            summary: Health check
+            responses:
+              '200':
+                description: OK
+
