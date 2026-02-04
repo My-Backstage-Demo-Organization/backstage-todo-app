@@ -29,7 +29,7 @@ phases:
       - echo "=== POST_BUILD START ==="
       - echo "Pushing Docker image to ECR..."
       - docker push ${REPOSITORY_URI}:latest
-      - echo "Image pushed to ECR: ${REPOSITORY_URI}:latest"
+      - echo "Image pushed to ECR:${REPOSITORY_URI}:latest"
 
 artifacts:
   files:
