@@ -4,8 +4,8 @@ metadata:
   name: react-fastapi-app
   description: React + FastAPI + SQLite demo service
   annotations:
-    aws.amazon.com/amazon-ecs-service-arn: arn:aws:ecs:us-east-1:026232767940:cluster/default
-    aws.amazon.com/amazon-ecs-service-tags: component=backstage
+    aws.amazon.com/amazon-ecs-service-arn: arn:aws:ecs:us-east-1:026232767940:service/default/todo-app-5f96
+    aws.amazon.com/amazon-ecs-service-tags: service=todo
 spec:
   type: service
   owner: user:github/sairamreddy77
