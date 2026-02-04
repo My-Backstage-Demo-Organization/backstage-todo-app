@@ -5,6 +5,7 @@ metadata:
   description: React + FastAPI + SQLite demo service
   annotations:
     aws.amazon.com/amazon-ecs-service-arn: arn:aws:ecs:us-east-1:026232767940:cluster/default
+    aws.amazon.com/amazon-ecs-service-tags: component=backstage
 spec:
   type: service
   owner: user:github/sairamreddy77
