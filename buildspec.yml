@@ -9,7 +9,7 @@ phases:
   pre_build:
     commands:
       - echo "=== PRE_BUILD START ==="
-      - echo "AWS_REGION: ${AWS_REGION}"
+      - echo "AWS_REGION:${AWS_REGION}"
       - ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
       - echo "ACCOUNT_ID: ${ACCOUNT_ID}"
       - REPOSITORY_URI=${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${IMAGE_REPO_NAME}
