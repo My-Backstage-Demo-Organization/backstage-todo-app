@@ -1,28 +1,19 @@
-# 1. Use a small official Python base image
 FROM python:3.11-slim
 
-# 2. Set the working directory inside the container
 WORKDIR /app
 
-# 3. Install system dependencies (optional but useful for builds)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
   && rm -rf /var/lib/apt/lists/*
 
-# 4. Copy backend requirements first (for better Docker cache use)
+# backend/requirements.txt contains fastapi, uvicorn, sqlalchemy, pydantic, etc.
 COPY backend/requirements.txt /app/requirements.txt
 
-# 5. Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 6. Copy the backend code into the container
-#    This will bring in app/, todo.db (if present), etc.
+# Copy backend code (app/main.py, todo.db, etc.)
 COPY backend/ /app/
 
-# 7. Expose the port FastAPI will run on
 EXPOSE 8000
 
-# 8. Start FastAPI using Uvicorn
-#    Our module path is: app/main.py -> "app.main"
-#    Our FastAPI instance should be: app = FastAPI()
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
