@@ -4,15 +4,15 @@ metadata:
   name: react-fastapi-app
   description: React + FastAPI + SQLite demo service
   annotations:
-    # aws.amazon.com/amazon-ecs-service-arn: arn:aws:ecs:us-east-1:026232767940:service/default/todo-app-5f96
-    # aws.amazon.com/amazon-ecs-service-tags: service=todo
+    aws.amazon.com/amazon-ecs-service-arn: arn:aws:ecs:us-east-1:026232767940:service/default/todo-app-5f96
+    aws.amazon.com/amazon-ecs-service-tags: service=todo
     # aws.amazon.com/aws-codebuild-project-arn: arn:aws:codebuild:us-east-1:026232767940:project/todo-backend-build
     # aws.amazon.com/aws-codebuild-project-tags: component=cicd
     
-    aws.amazon.com/ecs-cluster: default
-    aws.amazon.com/ecs-service-name: todo-app-5f96
-    aws.amazon.com/aws-region: us-east-1
-    aws.amazon.com/aws-account-id: "026232767940"
+    # aws.amazon.com/ecs-cluster: default
+    # aws.amazon.com/ecs-service-name: todo-app-5f96
+    # aws.amazon.com/aws-region: us-east-1
+    # aws.amazon.com/aws-account-id: "026232767940"
 
     
 spec:
